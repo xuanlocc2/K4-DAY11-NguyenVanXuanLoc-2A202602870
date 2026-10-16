@@ -1,0 +1,45 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 11.473621513738426,
+  "cutDur": 3.9648680462076826,
+  "cutV": 15.637686400344968,
+  "cutDs": -3.2902568534271897,
+  "pedT0": 5.335278078493392,
+  "pedV": 1.3799833232042862,
+  "busGo": 18.720743290053,
+  "tgT": 0.9341011479801863,
+  "cutGap": 11.631270572117987,
+  "pedGap": 5.498482161084195,
+  "mu": 0.8,
+  "pedLook": 1,
+  "cutBrake": 0.0,
+  "civil": true
+ },
+ "policy": {},
+ "hazards": [
+  {
+   "type": "ped",
+   "x": 175.85495119335297,
+   "v": 1.9335503057322483,
+   "trig": 41.8741701103686
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   110,
+   220
+  ],
+  "h0_trig": [
+   30,
+   70
+  ],
+  "h0_v": [
+   1.2,
+   2.2
+  ]
+ },
+ "exposure": 0.02,
+ "why": "Người đi bộ băng ngang giữa đoạn đường, chỗ KHÔNG có vạch (jaywalking), đi 1.2-2.2 m/s (đi bộ nhanh đến chạy chậm; <2.5 m/s là giới hạn is_feasible), bước ra khi xe ta còn cách 30-70 m, ở x 110-220 m (đoạn phố sau vạch qua đường). Căn cứ tình huống: NHTSA Traffic Safety Facts (Pedestrians, 2023) ghi ~74% người đi bộ tử vong xảy ra ngoài giao lộ. Căn cứ tốc độ: tốc độ đi bộ người lớn ~1.2-1.5 m/s, đi nhanh/chạy chậm tới ~2.2 m/s. exposure = 0.02 là GIẢ ĐỊNH bậc độ lớn của tôi (khoảng 1 chuyến phố đô thị trong 50 có một người băng ngang giữa đoạn đủ gần để phải phản ứng); tôi KHÔNG có số liệu tần suất gặp, cần thay bằng dữ liệu dashcam/ghi hình đường phố thật; per_trip tỉ lệ thuận với giá trị này."
+}
